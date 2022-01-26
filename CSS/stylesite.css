@@ -1,0 +1,203 @@
+li{
+    list-style-type: none; /* On ne veut aucune puce*/
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Fira Sans';
+    font-style: italic;
+   
+
+}
+
+ul{
+    display: flex; /*pour définir les éléments comme une flexbox*/
+    padding-left: 0; /* pour enlever le padding qui est à gauche des onglets */
+    justify-content: space-around; /* pour placer les élements avec des espaces centrés ex: ------     -------    -------    ------   */ 
+    margin: 0; /*mettre la marge à 0 */
+    
+}
+
+nav{
+    background-color: white;
+
+}
+
+a{
+    display: inline-block; /* Pour que le lien prenne tout le block / sa enleve le padding en dessous*/
+    color: rgb(150, 70, 70);
+    padding: 20px 15px;
+    text-decoration: none; /*enlever le soulignement du texte des liens*/
+}
+
+a:hover{ /*quand la souris survol l'article*/
+    background-color: rgb(146, 136, 136); /* quand on survol larticle le fond devient blanc*/
+
+
+}
+
+body{
+    margin: 0;
+   
+}
+
+header{
+      
+    height: 70vh;
+    background-image: url('../images/og_3860.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+h1, header p{ /*paragraphe enfant de header */
+    color: whitesmoke;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+
+}
+
+header div{
+    padding-bottom: 20px;
+}
+main > section{ /* enfant de premier niveau . cad sa sapplique au premier section de main */
+    padding: 50px 250px;
+}
+
+h2{
+    text-align: center;
+}
+
+.section-paire{
+    background-color: rgb(161, 194, 172);
+}
+
+img{
+    width: 50%;
+    height:auto;
+    object-fit: contain;
+}
+
+#div-droite{
+    width: 50%;
+    box-sizing: border-box;
+    padding-left : 15px;
+
+}
+
+#section-2-2{
+    display: flex;
+    flex-wrap: wrap; /* */
+}
+
+#img-container img{
+    width: 25%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+#img-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+input:not([type=radio]),textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 20px;
+}
+
+form{
+    width:50%
+}
+
+#form-container{
+    display: flex;
+    justify-content: center;
+}
+
+#input-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-container div{
+    width: 49%;
+
+}
+
+form > div, fieldset{
+    margin-bottom: 12px;
+}
+
+input[type=submit]{
+    background-color: rgb(12, 36, 13);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+input[type=submit]:hover{
+    background-color:rgb(146, 136, 136);
+
+
+}
+
+/*RESPONSISVE*/
+
+@media(max-width: 1400px){ /*responsive si l'affichage est egale ou inferieur a 1400 px */
+    main > section{
+        padding : 50px 125px; /*Je veux que le padding soit de 50px en haut et bas et 125px a gauche et droite  */
+    }
+}
+
+@media(max-width: 1200px){ /*responsive si l'affichage est egale ou inferieur a 1200 px */
+    #img-container img{  /* Je veux que les images qui sont dans img container en html soient d'une largeur de 33% */
+        width: 33.3333333%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    #div-droite{
+        width: 100%;
+        padding-left:0;
+    }
+}
+
+@media(max-width: 992px){ /*responsive si l'affichage est egale ou inferieur a 992 px */
+    #img-container img{  /* Je veux que les images qui sont dans img container en html soient d'une largeur de 33% */
+        width: 50%;
+    }
+
+    form{
+        width: 70%
+    }
+}
+
+@media(max-width: 768px){ /*responsive si l'affichage est egale ou inferieur a 1400 px */
+     main > section{  
+         padding: 50px 60px;
+    }
+
+    #img-container img{  /* Je veux que les images qui sont dans img container en html soient d'une largeur de 33% */
+        width: 100%;
+    }
+
+}
+
+/* FIN RESPONSISVE*/
+
+@font-face{
+    src: url('../Fonts/DancingScript-VariableFont_wght.ttf'); /* formule pour ajouter une police*/
+    font-family: 'lyric'; /*nom de la police que lon veut lui donner*/
+}

@@ -205,3 +205,17 @@ input[type=submit]:hover{
 footer p{
     text-align: center;
 }
+
+#Haut{
+    color:blanchedalmond;
+    background-color: green;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+@media(max-width: 1400px){
+    main > section{
+        padding : 50px 125px;
+    }
+}

@@ -201,3 +201,7 @@ input[type=submit]:hover{
     src: url('../Fonts/DancingScript-VariableFont_wght.ttf'); /* formule pour ajouter une police*/
     font-family: 'lyric'; /*nom de la police que lon veut lui donner*/
 }
+
+footer p{
+    text-align: center;
+}
